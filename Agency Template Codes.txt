@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19902009fe.js" crossorigin="anonymous"></script>
+
+    <title>Agency Template</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            position: relative;
+        }
+
+        ul {
+            padding-inline-start: 0;
+        }
+
+        /*NAVBAr*/
+        .navbar {
+            background-color: #212529;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            text-transform: uppercase;
+            color: #fff;
+
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #FED136;
+        }
+
+        .navbar-toggler {
+            background-color: #FED136;
+            padding: 8px 12px;
+            padding-top: 6px;
+            padding-left: 6px;
+
+        }
+
+        .navbar-toggler span {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            padding: 5px;
+
+        }
+
+        /*MAIN*/
+        .header {
+            background-image: url("slide-dark.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 200px 100px;
+        }
+
+        .header .container .btn {
+            background-color: #FED136;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 20px 40px;
+        }
+
+        .header .container .btn:hover {
+            background-color: #FEC810;
+        }
+
+        .header h3 {
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .header h1 {
+            font-size: 70px;
+            padding: 20px 0;
+        }
+
+        @media(max-width:992px) {
+            .header {
+                padding: 150px 0;
+            }
+        }
+
+        @media(max-width:768px) {
+            .header {
+                padding: 90px 0;
+            }
+
+            .header h3 {
+                font-size: 25px;
+                padding: 10px 0;
+            }
+
+            .header h1 {
+                padding: 10px 0;
+                font-size: 50px;
+            }
+        }
+
+
+        /*Section-Services*/
+        .services {
+            padding: 50px 0;
+        }
+
+        .services-header .services-title {
+            color: #212529;
+            font-size: 40px;
+            padding: 10px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .services-header .services-text {
+            color: #6c757d;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .services-types {
+            padding: 50px 0;
+        }
+
+        .services-types .photo {
+            display: flex;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #FED136;
+        }
+
+        .services-types .photo i {
+            margin: auto;
+            text-align: center;
+            color: #fff;
+            font-size: 60px;
+
+        }
+
+        .services-types .title {
+            color: #212529;
+            font-size: 25px;
+            padding: 20px 0;
+            font-weight: 700;
+        }
+
+        .services-types .text {
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+        /*Section-Portfolio*/
+        .portfolio-bg {
+            background-color: #F8F9FA;
+        }
+
+        .portfolio {
+            padding: 50px 0;
+        }
+
+        .portfolio .portfolio-title {
+            color: #212529;
+            font-size: 40px;
+            padding: 10px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .portfolio .portfolio-text {
+            color: #6c757d;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .card {
+            width: 30%;
+            border: none;
+            margin: 10px;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .card img {
+            border: none;
+        }
+
+        .card-title {
+            color: #212529;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .card-text {
+            font-style: italic;
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+        .portfolio .portfolio-types {
+            padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media(max-width:992px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media(max-width:576px) {
+            .card {
+                width: 75%;
+            }
+        }
+
+        .card:hover {
+            opacity: .6;
+        }
+
+
+        /*Section-About*/
+
+        .about {
+            padding: 50px 0;
+        }
+
+        .about .about-title {
+            color: #212529;
+            font-size: 40px;
+            padding: 10px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .about-header .about-text {
+            color: #6c757d;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .about-types {
+            padding: 50px 0;
+            position: relative;
+        }
+
+        /*About-Left*/
+        .about-left {
+            display: flex;
+            width: 50%;
+            border-right: 2px solid #E9ECEF;
+            padding-bottom: 200px;
+        }
+
+        .about-left-description {
+            display: flex;
+            width: 75%;
+            flex-direction: column;
+
+        }
+
+        .about-left-description-calendar {
+            color: #212529;
+            font-weight: 700;
+            text-align: end;
+            font-size: 25px;
+        }
+
+        .about-left-description-title {
+            color: #212529;
+            font-weight: 700;
+            text-align: end;
+            font-size: 25px;
+        }
+
+        .about-left-description-text {
+            text-align: end;
+            font-size: 16px;
+            color: #6c757d;
+            margin-left: 15px;
+        }
+
+        .about-left-photo {
+            position: absolute;
+            margin-left: 42%;
+
+        }
+
+        .about-left-photo img {
+            width: 180px;
+            height: 180px;
+            border: 8px solid #E9ECEF;
+            border-radius: 50%;
+        }
+
+        /*About-Right*/
+
+        .about-right {
+            display: flex;
+            width: 50%;
+            margin-left: auto;
+            border-left: 2px solid #E9ECEF;
+            padding-bottom: 200px;
+            flex-direction: row-reverse;
+            margin-right: 2px;
+        }
+
+        .about-right-description {
+            display: flex;
+            width: 75%;
+            flex-direction: column;
+
+        }
+
+        .about-right-description-calendar {
+            color: #212529;
+            font-weight: 700;
+            text-align: start;
+            font-size: 25px;
+        }
+
+        .about-right-description-title {
+            color: #212529;
+            font-weight: 700;
+            text-align: start;
+            font-size: 25px;
+        }
+
+        .about-right-description-text {
+            text-align: start;
+            font-size: 16px;
+            color: #6c757d;
+            margin-right: 15px;
+        }
+
+        .about-right-photo {
+            position: absolute;
+            margin-right: 42%;
+        }
+
+        .about-right-photo img {
+            width: 180px;
+            height: 180px;
+            border: 8px solid #E9ECEF;
+            border-radius: 50%;
+
+        }
+
+        .about-end {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            width: 180px;
+            height: 180px;
+            background-color: #FEC810;
+            border-radius: 50%;
+            border: 8px solid #E9ECEF;
+            margin-left: 42%;
+        }
+
+        .about-end a {
+            text-decoration: none;
+            margin: auto;
+            list-style-type: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        @media(max-width: 1200px) {
+
+
+            .about-left-photo img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-right-photo img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-end {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media(max-width:992px) {
+            .about-left-photo img {
+                width: 110px;
+                height: 110px;
+            }
+
+            .about-right-photo img {
+                width: 110px;
+                height: 110px;
+            }
+
+            .about-end {
+                width: 110px;
+                height: 110px;
+            }
+
+            .about-end a {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .about-left {
+                display: flex;
+                width: 100%;
+                border-left: 2px solid #E9ECEF;
+                border-right: none;
+                flex-direction: row-reverse;
+                padding-bottom: 200px;
+                justify-content: start;
+                padding-left: none;
+                margin: 0 50px;
+            }
+
+            .about-left-description {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                padding: 0 70px;
+
+            }
+
+            .about-left-description-calendar {
+                color: #212529;
+                font-weight: 700;
+                text-align: start;
+                font-size: 25px;
+            }
+
+            .about-left-description-title {
+                color: #212529;
+                font-weight: 700;
+                text-align: start;
+                font-size: 25px;
+            }
+
+            .about-left-description-text {
+                text-align: start;
+                font-size: 16px;
+                color: #6c757d;
+                margin-left: 0;
+            }
+
+            .about-left-photo {
+                position: absolute;
+                margin-right: 92%;
+            }
+
+            .about-left-photo img {
+                width: 85px;
+                height: 85px;
+                border: 6px solid #E9ECEF;
+                border-radius: 50%;
+            }
+
+            .about-right {
+                display: flex;
+                width: 100%;
+                border-left: 2px solid #E9ECEF;
+                border-right: none;
+                flex-direction: row-reverse;
+                padding-bottom: 200px;
+                justify-content: start;
+                padding-left: none;
+                margin: 0 50px;
+            }
+
+            .about-right-description {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                padding: 0 70px;
+
+            }
+
+
+            .about-right-description-calendar {
+                color: #212529;
+                font-weight: 700;
+                text-align: start;
+                font-size: 25px;
+            }
+
+            .about-right-description-title {
+                color: #212529;
+                font-weight: 700;
+                text-align: start;
+                font-size: 25px;
+            }
+
+            .about-right-description-text {
+                text-align: start;
+                font-size: 16px;
+                color: #6c757d;
+                margin-right: 0px;
+            }
+
+            .about-right-photo {
+                position: absolute;
+                margin-right: 92%;
+            }
+
+            .about-right-photo img {
+                width: 85px;
+                height: 85px;
+                border: 6px solid #E9ECEF;
+                border-radius: 50%;
+
+            }
+
+            .about-end {
+                justify-content: start;
+                width: 85px;
+                height: 85px;
+                border: 6px solid #E9ECEF;
+                margin-left: 2%;
+            }
+
+            .about-end a {
+                margin: auto;
+                list-style-type: none;
+                color: #fff;
+                font-size: 9px;
+                font-weight: 700;
+            }
+        }
+
+        /*Section-Team*/
+        .team-bg {
+            background-color: #F8F9FA;
+        }
+
+        .team {
+            padding: 50px 0;
+        }
+
+        .team .team-title {
+            color: #212529;
+            font-size: 40px;
+            padding: 10px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .team .team-text {
+            color: #6c757d;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .team-photo img {
+            width: 220px;
+            height: 220px;
+            border: 8px solid #DFE0E1;
+            border-radius: 50%;
+        }
+
+        .team-person-title {
+            color: #212529;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .team-person-text {
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+        .team-person-social {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .team-person-social-icon {
+            display: flex;
+            list-style-type: none;
+            width: 40px;
+            height: 40px;
+            background-color: #343A40;
+            border-radius: 50%;
+            margin: 0 8px;
+            transition: .2s;
+        }
+
+        .team-person-social-icon:hover {
+            background-color: #23272B;
+        }
+
+        .team-person-social-icon a {
+            color: #fff;
+            margin: auto;
+        }
+
+        .team-person-ending {
+            text-align: center;
+            color: #6c757d;
+            font-size: 16px;
+            padding: 0 200px;
+        }
+
+        @media(max-width:992px) {
+            .team-person-ending {
+                padding: 0 20px;
+            }
+        }
+
+        /*Section-Advertisement*/
+        .advertisement {
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .advertisement-photo {
+            text-align: center;
+            list-style-type: none;
+            padding-top: 20px;
+        }
+
+        /*Section-Contact*/
+        .contact-bg {
+            background-image: url("AgencyImg/map-img.jpg");
+            background-size: cover;
+        }
+
+        .contact {
+            padding: 50px 0;
+        }
+
+        .contact .contact-title {
+            color: #fff;
+            font-size: 40px;
+            padding: 10px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .contact .contact-text {
+            color: #6c757d;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .contact-area {
+            padding: 30px 0;
+        }
+
+        .form-control {
+            font-weight: 700;
+            font-size: 16px;
+            padding: 33px 20px;
+
+        }
+
+        .contact .btn {
+            background-color: #FED136;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 20px 40px;
+        }
+
+        .contact .btn:hover {
+            background-color: #FEC810;
+        }
+
+
+        /*Footer*/
+        footer {
+            background-color: #F8F9FA;
+            padding: 20px 0;
+
+
+        }
+
+        .footer .copy {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer .footer-link {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer .footer-link a {
+            padding: 0 5px;
+            color: #FEC810;
+        }
+        @media(max-width: 992px){
+            .footer .copy {
+                justify-content: center;
+            }
+
+            .footer .footer-link{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <nav class="fixed-top">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container py-2">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-link">
+                        <img style="width: 150px;" src="AgencyImg/navbar-logo.svg" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navbarCollapse">
+                    <span>Menu <i class="fas fa-bars"></i></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a href="#services" class="nav-link  px-3">Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#portfolio" class="nav-link  px-3">Porfolio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#about" class="nav-link px-3">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#team" class="nav-link px-3">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link  px-3">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header">
+            <div class="container text-center">
+                <h3 class="font-italic">
+                    Welcome To Our Studio!
+                </h3>
+                <h1 class="font-weight-bold">
+                    IT'S NICE TO MEET YOU
+                </h1>
+                <a href="#" class="btn btn-warning font-weight-bold my-4">Tell Me More</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="services">
+        <div class="services text-center container">
+            <div class="services-header">
+                <h2 class="services-title">Services</h2>
+                <p class="services-text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="services-types row">
+                <div class="col-md-4">
+                    <div class="photo mx-auto">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h2 class="title">E-Commerce</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                        inventore harum ex magni, dicta impedit.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo  mx-auto">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h2 class="title">Responsive Design</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                        inventore harum ex magni, dicta impedit.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo  mx-auto">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2 class="title">Web Security</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                        inventore harum ex magni, dicta impedit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-bg" id="portfolio">
+        <div class="portfolio text-center  container container-fluid">
+            <div class="portfolio-header">
+                <h2 class="portfolio-title">Portfolio</h2>
+                <p class="portfolio-text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="portfolio-types">
+
+                <div class="card">
+                    <img src="AgencyImg/Threads.jpg" alt="" class="card-img-top">
+
+                    <div class="card-body">
+                        <div class="card-title">
+                            Threads
+                        </div>
+                        <div class="card-text">
+                            Illustration
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card ">
+                    <img src="AgencyImg/Explore.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Explore
+                        </div>
+                        <div class="card-text">
+                            Graphic Design
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="AgencyImg/03-thumbnail.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Finish
+                        </div>
+                        <div class="card-text">
+                            Identity
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="AgencyImg/04-thumbnail.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Lines
+                        </div>
+                        <div class="card-text">
+                            Branding
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="AgencyImg/05-thumbnail.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Southwest
+                        </div>
+                        <div class="card-text">
+                            Website Design
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="AgencyImg/06-thumbnail.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Window
+                        </div>
+                        <div class="card-text">
+                            Photography
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about text-center container">
+            <div class="about-header">
+                <h2 class="about-title">About</h2>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="about-types">
+                <div class="about-left">
+                    <div class="about-left-description">
+                        <h3 class="about-left-description-calendar">2009-2011</h3>
+                        <h3 class="about-left-description-title">Our Humble Beginnings</h3>
+                        <p class="about-left-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae
+                            sit
+                            vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                    <div class="about-left-photo ">
+                        <img src="AgencyImg/1.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="about-right">
+                    <div class="about-right-description">
+                        <h3 class="about-right-description-calendar">March 2011</h3>
+                        <h3 class="about-right-description-title">An Agency is Born</h3>
+                        <p class="about-right-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae
+                            sit
+                            vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                    <div class="about-right-photo">
+                        <img src="AgencyImg/2.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="about-left">
+                    <div class="about-left-description">
+                        <h3 class="about-left-description-calendar">December 2012</h3>
+                        <h3 class="about-left-description-title">Transition to Full Service</h3>
+                        <p class="about-left-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae
+                            sit
+                            vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                    <div class="about-left-photo ">
+                        <img src="AgencyImg/3.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="about-right">
+                    <div class="about-right-description">
+                        <h3 class="about-right-description-calendar">July 2014</h3>
+                        <h3 class="about-right-description-title">Phase Two Expansion</h3>
+                        <p class="about-right-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae
+                            sit
+                            vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                    <div class="about-right-photo">
+                        <img src="AgencyImg/4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="about-end">
+                    <a href="">Be Part
+                        Of Our
+                        Story!</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-bg">
+        <div class="team container text-center">
+            <div class="team-header">
+                <h2 class="team-title">OUR AMAZING TEAM</h2>
+                <p class="team-text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="team-types row">
+                <div class="team-person col-lg-4 p-5">
+                    <div class="team-photo mb-4">
+                        <img src="AgencyImg/team/1.jpg" alt="">
+                    </div>
+                    <h3 class="team-person-title">Kay Garland</h3>
+                    <p class="team-person-text">Lead Designer</p>
+                    <ul class="team-person-social">
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="team-person col-lg-4 p-5">
+                    <div class="team-photo mb-4">
+                        <img src="AgencyImg/team/2.jpg" alt="">
+                    </div>
+                    <h3 class="team-person-title">Larry Parker</h3>
+                    <p class="team-person-text">Lead Marketer</p>
+                    <ul class="team-person-social">
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="team-person col-lg-4 p-5">
+                    <div class="team-photo mb-4">
+                        <img src="AgencyImg/team/3.jpg" alt="">
+                    </div>
+                    <h3 class="team-person-title">Diana Petersen</h3>
+                    <p class="team-person-text">Lead Developer</p>
+                    <ul class="team-person-social ">
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="team-person-social-icon"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <p class="team-person-ending">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos
+                    non
+                    quis ad perspiciatis, totam corporis ea, alias ut unde.
+
+                </p>
+            </div>
+    </section>
+
+    <section class="container">
+        <ul class="advertisement row">
+            <li class="advertisement-photo col-md-3 col-sm-6">
+                <a href=""><img src="AgencyImg/envato.jpg" alt=""></a>
+            </li>
+            <li class="advertisement-photo col-md-3 col-sm-6">
+                <a href=""><img src="AgencyImg/designmodo.jpg" alt=""></a>
+            </li>
+            <li class="advertisement-photo col-md-3 col-sm-6">
+                <a href=""><img src="AgencyImg/themeforest.jpg" alt=""></a>
+            </li>
+            <li class="advertisement-photo col-md-3 col-sm-6">
+                <a href=""><img src="AgencyImg/creative-market.jpg" alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-bg">
+        <div class="contact container text-center">
+            <div class="contact-header text-center">
+                <h2 class="contact-title">CONTACT US</h2>
+                <p class="contact-text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="contact-area row">
+                <div class="contact-area-info col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name *">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="number" placeholder="Your Phone *">
+                    </div>
+                </div>
+                <div class="contact-area-text col-md-6">
+                    <div class="form-group">
+                        <textarea name="comment" class="form-control" id="comment" cols="30" rows="7"
+                            placeholder="Your Message *"></textarea>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-warning font-weight-bold my-4">Tell Me More</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer row text-center">
+                <div class="copy col-lg-4">
+                    <p>Copyright &copy; Your Website 2020</p>
+                </div>
+                <ul class="team-person-social col-lg-4">
+                    <li class="team-person-social-icon"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="team-person-social-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="team-person-social-icon"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+                <p class="footer-link col-lg-4">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
